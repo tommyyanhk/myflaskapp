@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %} 
+<div class="jumbotron text-center">
+	<h1>Welcome to ShareToYou</h1>
+	<p class="lead">You can share or rent everything with everyone in HK</p>
+	{% if session.logged_in == NULL %}
+		<a href="/register" class="btn btn-primary btn-lg">Register</a>
+		<a href="/login" class="btn btn-success btn-lg">Login</a>
+	{% endif %}
+</div>
+<div class="table">
+	<table border="1">
+		<tr>
+			<td><img src="https://hk.canon/media/image/2019/08/27/c42681f24c7b4e11a77c61a9b51378d5_8_EOS+90D_BK_FrontSlantDown_EF-S18-135mm_3.5-5.6ISUSM.png" width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/20/toyota_prius_15_a_1587383089_890cb8ae_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/18/dell_latitude_e7250_i5_win10_1587222655_c1ea65f0_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+		</tr>
+
+		<tr>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/20/playstation_4__ps4_gamesvr__ne_1587362858_b51a1eb8_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/13/smartech_1586755466_af0491fe_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/20/fear_of_god_t_tee_1587385201_b454742c_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+		</tr>
+
+		<tr>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/20/12_1587382858_79ee9a80_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/03/24/163806_284248893_thumbnailq_progressive_thumbnail"width="300px" height="300px"></a></td>
+			<td><img src="https://media.karousell.com/media/photos/products/2020/4/20/jd_brother__1587375696_ba249a29_progressive_thumbnail.jpg"width="300px" height="300px"></a></td>
+		</tr>
+	</table>
+</div>
+{% endblock %}

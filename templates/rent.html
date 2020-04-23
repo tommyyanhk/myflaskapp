@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %} 
+	<h1><center>{{rent.title}}</center></h1>
+	<small><center>Posted by {{rent.seller }} on {{rent.create_date}}</center></small>
+	<hr>
+	<div><center>
+		{{rent.body | safe}}
+		<p><img src="{{url_for('static', filename='images/'+rent.img)}}" alt=""></img></p>
+	</div></center>
+{% endblock %}

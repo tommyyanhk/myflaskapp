@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %} 
+	<h1><center>Rent Items</center></h1>
+	<ul class="list-group">
+		{% for rent in rents %}
+	<table style="width:100%">
+		<tr>
+			<th><li class="list-group-item"><a href="rent/{{rent.id}}">{{ rent.title }}<p><img src="{{url_for('static', filename='images/'+rent.img)}}" alt="">by:{{ rent.seller }}   posted on:{{ rent.create_date }}</a></p></li></th>
+		</tr>
+			
+
+		{% endfor %}
+	</ul>
+{% endblock %}
